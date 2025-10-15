@@ -1,0 +1,64 @@
+{
+  "name": "react-native-google-one-tap",
+  "version": "1.0.0",
+  "description": "Native Google One Tap Sign-In for React Native Android using Android Credential Manager API",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "react-native",
+    "google",
+    "one-tap",
+    "sign-in",
+    "authentication",
+    "credential-manager",
+    "android"
+  ],
+  "author": "Alexandre ARNAUD <alexniokiz@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexniokiz/react-native-google-one-tap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexniokiz/react-native-google-one-tap/issues"
+  },
+  "homepage": "https://github.com/alexniokiz/react-native-google-one-tap#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.72.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "files": [
+    "src/",
+    "android/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "react-native-google-one-tap-setup": "scripts/setup-dependencies.js"
+  },
+  "react-native": {
+    "android": {
+      "sourceDir": "android",
+      "packageImportPath": "import com.alexniokiz.googleonetap.GoogleOneTapPackage;"
+    }
+  }
+}
