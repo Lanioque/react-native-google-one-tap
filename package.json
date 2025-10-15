@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-one-tap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native Google One Tap Sign-In for React Native Android using Android Credential Manager API",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lanioque/react-native-google-one-tap.git"
+    "url": "git+https://github.com/Lanioque/react-native-google-one-tap.git"
   },
   "bugs": {
     "url": "https://github.com/Lanioque/react-native-google-one-tap/issues"
